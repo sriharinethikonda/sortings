@@ -1,0 +1,19 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+    vector <int> vb={30,12,45,23,10};
+    //1st method to create itearator
+    vector <int>::iterator it=vb.begin();
+    cout<<*it<<" ";
+    it++;
+    cout<<*it<<" ";
+      cout<<"\n";
+      
+    //2nd way to create iterator  
+    for(auto it=vb.begin();it!=vb.end();it++){
+        cout<<*it<<" ";
+    }
+    cout<<"\n";
+    return 0;
+}
