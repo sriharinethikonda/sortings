@@ -1,0 +1,17 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+    int arr[5]={30,12,45,23,10};
+   int maxi=*max_element(arr,arr+5);
+   int mini=*min_element(arr,arr+5);
+   cout<<maxi<<" "<<mini<<" "<<"\n";
+   int m=max(10,20);
+   int mn=min(10,20);
+   cout<<m<<" "<<mn<<"\n";
+   vector <int> vb={10,50,89,34,12};
+   int vmax=*max_element(vb.begin(),vb.end());
+   int vmin=*min_element(vb.begin(),vb.end());
+   cout<<vmax<<" "<<vmin<<"\n";
+return 0;
+}
